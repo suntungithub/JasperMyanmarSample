@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.0.1.final using JasperReports Library version 6.0.0  -->
+<!-- 2021-09-15T15:47:21 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="UnicodeReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30" uuid="9df06543-a919-4db2-9dcd-ed4c8a66dec7">
+	<style name="label" fontName="Pyidaungsu" fontSize="16"/>
+	<parameter name="MyanmarText" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["\u1019\u1004\u103A\u1039\u1002\u101C\u102C\u1015\u102B"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="GreetingText" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["\u101B\u103D\u103E\u1004\u103A\u101C\u1014\u103A\u1038\u1001\u103B\u1019\u103A\u1038\u1019\u103C\u1031\u1037\u1000\u103C\u1015\u102B\u1005\u1031"]]></defaultValueExpression>
+	</parameter>
+	<title>
+		<band height="100">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="10" y="10" width="520" height="60" uuid="a37e1c3b-4a40-4275-86aa-cfbf51fcf8eb"/>
+				<textElement>
+					<font fontName="Pyidaungsu" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{MyanmarText} + "\n" + $P{GreetingText}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<summary>
+		<band height="300" splitType="Immediate">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<frame>
+				<reportElement positionType="Float" x="0" y="10" width="520" height="30" uuid="75d0ac93-66cb-450c-8873-08a40e73bec4"/>
+				<staticText>
+					<reportElement style="label" x="0" y="0" width="100" height="30" uuid="b61ce75e-afaf-414d-a562-cbd2566dff72"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[မန္တလေး]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="120" y="0" width="400" height="30" uuid="e56fa8fd-ab2e-47df-a35f-7e1bb61dd9c3"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Pyidaungsu" size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA["မန္တလေး မိတ္ထိလာ မြင်းခြံ"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="52" width="520" height="30" uuid="7d611b08-dd38-4ab5-84f7-5e009c5d530c"/>
+				<staticText>
+					<reportElement style="label" x="0" y="0" width="100" height="30" uuid="247dec68-12be-4926-9b6f-4f8012b3dd1b"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[တောင်ကြီး]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="120" y="0" width="400" height="30" uuid="fb607061-6811-4c72-8edd-304cdb291045"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Pyidaungsu" size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA["တောင်ကြီး  လားရှိုး သိန္နီမြို့နယ်"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="94" width="520" height="30" uuid="f65e248a-6a67-4144-a22f-f56ac1574fb6"/>
+				<staticText>
+					<reportElement style="label" x="0" y="0" width="100" height="30" uuid="98c0c4f6-d1a1-4f93-ad32-e4adfad240bf"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[တနင်္သာရီ]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="120" y="0" width="400" height="30" uuid="ded0ca59-f5a3-41ff-8f60-85fd8080a89e"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Pyidaungsu" size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA["ရေဖြူ သရက်ချောင်း တနင်္သာရီ မြိတ်"]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</summary>
+</jasperReport>
